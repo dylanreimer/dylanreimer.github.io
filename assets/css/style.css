@@ -1,0 +1,35 @@
+
+a.nav-logo {
+  position: absolute;
+  width: 53px;
+  height: 48px;
+  left: 1361px;
+  top: 29px;
+}
+
+a.nav-socials {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 1370px;
+}
+
+a.nav-mail {
+  top: 564px;
+}
+
+a.nav-linkedin {
+  top: 621px;
+}
+
+a.nav-github {
+  top: 678px;
+}
+
+a.nav-twitter {
+  top: 735px;
+}
+
+a.nav-instagram {
+  top: 792px;
+}
