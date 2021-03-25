@@ -376,7 +376,7 @@
                                 error = "Server is currently unavailable!";
                                 break;
                             default:
-                                error = "Unexpected error, please try again later.";
+                                error = "Unesxpected error, please try again later.";
                         }
                         if (error) {
                             alert(error);
