@@ -44,17 +44,17 @@
 
 /* MASTER COLOR CONTROL */
 :root{
-    --dark1: #160050;
+    --dark1: #270079;
     --dark2: #554247;
-    --dark3: #150042;
+    --dark3: #302729;
     --dark4: #492d31;
-   
+    --dark5: #362a2e;
 
-    --light1: #9e28ff;
-    --light2: #7f0bdd;
+    --light1: #f37b83;
+    --light2: #c6646b;
 
     --accent1: #faefff;
-    --accent2: #9285a8;
+    --accent2: #a88590;
     --accent3: #acacac;
     --accent4: #848484;
     --accent5: #f9f0ff;
@@ -630,7 +630,7 @@ h1.entry-title {
 
 .service-holder {
     padding: 36px;
-    background-color: var(--dark1);
+    background-color: var(--dark5);
     width: 47%;
     margin-right: 6%;
     margin-bottom: 6%;

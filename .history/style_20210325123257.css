@@ -44,17 +44,17 @@
 
 /* MASTER COLOR CONTROL */
 :root{
-    --dark1: #160050;
+    --dark1: #180050;
     --dark2: #554247;
     --dark3: #150042;
     --dark4: #492d31;
    
 
-    --light1: #9e28ff;
-    --light2: #7f0bdd;
+    --light1: #f37b83;
+    --light2: #c6646b;
 
     --accent1: #faefff;
-    --accent2: #9285a8;
+    --accent2: #a88590;
     --accent3: #acacac;
     --accent4: #848484;
     --accent5: #f9f0ff;
