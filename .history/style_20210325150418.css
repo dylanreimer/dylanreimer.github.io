@@ -843,17 +843,17 @@ h1.entry-title {
 }
 
 .grid-item.portfolio-content-loading {
-    opacity: 1 !important;
+    opacity: 0 !important;
 }
 
 .portfolio-text-wrapper {
     position: absolute;
-    left: 15px;
+    left: 30px;
     bottom: 0;
 }
 
 .portfolio-text {
-    font-size: 60px;
+    font-size: 70px;
     line-height: 100%;
     font-weight: 700;
     color: var(--accent1);

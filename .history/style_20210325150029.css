@@ -848,17 +848,17 @@ h1.entry-title {
 
 .portfolio-text-wrapper {
     position: absolute;
-    left: 15px;
+    left: 30px;
     bottom: 0;
 }
 
 .portfolio-text {
-    font-size: 60px;
+    font-size: 80px;
     line-height: 100%;
     font-weight: 700;
     color: var(--accent1);
     margin-bottom: 0;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .portfolio-cat {

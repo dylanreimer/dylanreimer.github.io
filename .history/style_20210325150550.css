@@ -848,12 +848,12 @@ h1.entry-title {
 
 .portfolio-text-wrapper {
     position: absolute;
-    left: 15px;
+    left: 10px;
     bottom: 0;
 }
 
 .portfolio-text {
-    font-size: 60px;
+    font-size: 70px;
     line-height: 100%;
     font-weight: 700;
     color: var(--accent1);
