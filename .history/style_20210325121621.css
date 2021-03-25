@@ -48,17 +48,14 @@
     --dark2: #554247;
     --dark3: #302729;
     --dark4: #492d31;
-    --dark5: #362a2e;
-
     --light1: #f37b83;
     --light2: #c6646b;
-
+    --light3: ;
     --accent1: #faefff;
     --accent2: #a88590;
     --accent3: #acacac;
-    --accent4: #848484;
-    --accent5: #f9f0ff;
-    
+    --accent4: ;
+    --accent5: ;
     --black: #000000;
     --white: #ffffff;
 }
@@ -514,7 +511,7 @@ img.my-info-signature {
 }
 
 .main-menu.sm-clean .sub-menu li a {
-    color: var(--accent4);
+    color: #848484;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -555,7 +552,7 @@ img.my-info-signature {
     display: flex;
     display: -webkit-flex;
     align-items: center;
-    background-color: var(--accent5);
+    background-color: #f9f0ff;
 }
 
 h2.section-title {
@@ -630,7 +627,7 @@ h1.entry-title {
 
 .service-holder {
     padding: 36px;
-    background-color: var(--dark5);
+    background-color: #362a2e;
     width: 47%;
     margin-right: 6%;
     margin-bottom: 6%;
