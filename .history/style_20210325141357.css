@@ -617,9 +617,15 @@ h1.entry-title {
 
 .social-icon {
     position: absolute;
+    letter-spacing: 5px;
     width: 30px;
     height: 30px;
 }
+
+.social-icon a:last-of-type {
+    margin-right: 0;
+}
+
 
 
 /* ===================================

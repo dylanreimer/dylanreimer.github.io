@@ -621,6 +621,11 @@ h1.entry-title {
     height: 30px;
 }
 
+.social-icon a:last-of-type {
+    margin-right: 0;
+}
+
+
 
 /* ===================================
     6. Service Section CSS

@@ -146,6 +146,13 @@ a.button:hover {
     background-color: var(--light1);
 }
 
+a.nav-socials {
+    /* position: absolute; */
+    width: 30px;
+    height: 30px;
+}
+
+
 /* ===================================
     3. Left Part Content (Sidebar) CSS
 ====================================== */
@@ -613,12 +620,6 @@ h1.entry-title {
 
 .social-links a:last-of-type {
     margin-right: 0;
-}
-
-.social-icon {
-    position: absolute;
-    width: 30px;
-    height: 30px;
 }
 
 
