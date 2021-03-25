@@ -626,14 +626,18 @@ h1.entry-title {
     6. Service Section CSS
 ====================================== */
 
+
+
 .services-image {
     flex: 1 0 0;
-    height: auto;
+    height: 100%;
     /* background-image: url(images/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; */
 }
+
+
     
 .services-wrapper {
     display: flex;
