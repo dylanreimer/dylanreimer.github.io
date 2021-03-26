@@ -342,9 +342,9 @@
                     'subject': $('#subject').val(),
                     'message': $('#message').val()
                 };
-
-                alert(params(action));
-                alert(params(name));
+                
+                alert(params[action]);
+                alert(params[name]);
                 alert(params[email]);
                 alert(params[subject]);
                 alert(params[message]);
