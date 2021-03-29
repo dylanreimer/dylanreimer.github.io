@@ -1183,8 +1183,9 @@ li.timeline-event:hover .timeline-event-date {
 }
 
 img.my-signature {
-    padding-top: 30px;
-    width: 215px; 
+    padding-top: 10px;
+    /* padding-right: 190px; */
+    width: 220px; 
 }
 
 
