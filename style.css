@@ -329,8 +329,8 @@ a.button:hover {
 }
 
 img.my-info-signature {
-    width: 215px;
-    padding-top: 35px;
+    width: 180px;
+    padding-top: 0px;
     padding-bottom: 30px;
 }
 
