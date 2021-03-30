@@ -614,6 +614,7 @@ h1.entry-title {
 }
 
 .social-icon a {
+    /* position: absolute; */
     display: inline-block;
     width: 30px;
     height: 30px;
