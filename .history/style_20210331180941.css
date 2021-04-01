@@ -58,7 +58,6 @@
     --accent3: #acacac;
     --accent4: #848484;
     --accent5: #f9f0ff;
-    --accent6: #c4bec9;
     
     --black: #000000;
     --white: #ffffff;
@@ -92,13 +91,10 @@ body img {
     display: block;
 }
 
-.link-main a {
+body.link-main a {
+    text-decoration: underline;
     color: var(--accent5);    
-    transition: color .2s linear;
-}
-
-.link-main a:hover {
-    color: var(--accent3); 
+    transition: color .3s linear;
 }
 
 .doc-loader {

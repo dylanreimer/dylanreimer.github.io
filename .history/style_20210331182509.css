@@ -93,12 +93,9 @@ body img {
 }
 
 .link-main a {
+    /* text-decoration: underline; */
     color: var(--accent5);    
-    transition: color .2s linear;
-}
-
-.link-main a:hover {
-    color: var(--accent3); 
+    /* transition: color .3s linear; */
 }
 
 .doc-loader {
