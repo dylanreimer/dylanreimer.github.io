@@ -1118,10 +1118,10 @@ div.pp_default .pp_description {
     position: absolute;
     height: 80px;
     width: 80px;
-    opacity: 0.8;
     background: url(images/play.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: white;
   }
 
 /* ===================================

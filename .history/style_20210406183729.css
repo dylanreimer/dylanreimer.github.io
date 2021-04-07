@@ -1115,10 +1115,10 @@ div.pp_default .pp_description {
 }
 
 .owl-carousel .owl-video-play-icon {
+    color: rgba(0, 0, 0, 0.308);
     position: absolute;
     height: 80px;
     width: 80px;
-    opacity: 0.8;
     background: url(images/play.png);
     background-repeat: no-repeat;
     background-size: 100%;

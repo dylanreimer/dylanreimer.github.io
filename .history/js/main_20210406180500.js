@@ -202,38 +202,45 @@
 
     function imageSliderSetUp() {
         $(".image-slider").each(function () {
-            var speed_value = $(this).data('speed');
-            var auto_value = $(this).data('auto');
-            var hover_pause = $(this).data('hover');
-            if (auto_value === true) {
-                $(this).owlCarousel({
-                    items: 1,
-                    loop: true,
-                    video: true,
-                    lazyLoad: true,
-                    autoHeight: true,
-                    smartSpeed: 1000,
-                    autoplay: auto_value,
-                    autoplayHoverPause: hover_pause,
-                    autoplayTimeout: speed_value,
-                    responsiveClass: true
-                });
-                $(this).on('mouseleave', function () {
-                    $(this).trigger('stop.owl.autoplay');
-                    $(this).trigger('play.owl.autoplay', [auto_value]);
-                });
-            } else {
-                $(this).owlCarousel({
-                    items: 1,
-                    loop: true,
-                    video: true,
-                    lazyLoad: true,
-                    autoHeight: true,
-                    smartSpeed: 1000,
-                    autoplay: false,
-                    responsiveClass: true
-                });
-            }
+            // var speed_value = $(this).data('speed');
+            // var auto_value = $(this).data('auto');
+            // var hover_pause = $(this).data('hover');
+            // if (auto_value === true) {
+            //     $(this).owlCarousel({
+            //         loop: true,
+            //         video: true,
+            //         lazyLoad: true,
+            //         autoHeight: true,
+            //         smartSpeed: 1000,
+            //         autoplay: auto_value,
+            //         autoplayHoverPause: hover_pause,
+            //         autoplayTimeout: speed_value,
+            //         responsiveClass: true,
+            //         items: 1
+            //     });
+            //     $(this).on('mouseleave', function () {
+            //         $(this).trigger('stop.owl.autoplay');
+            //         $(this).trigger('play.owl.autoplay', [auto_value]);
+            //     });
+            // } else {
+            //     $(this).owlCarousel({
+            //         loop: true,
+            //         video: true,
+            //         lazyLoad: true,
+            //         autoHeight: true,
+            //         smartSpeed: 1000,
+            //         autoplay: false,
+            //         responsiveClass: true,
+            //         items: 1
+            //     });
+            // }
+
+            $(this).owlCarousel({
+                items: 1,
+                loop: true,
+                video: true,
+                lazyLoad: true,
+            });
         });
     }
 
@@ -287,45 +294,45 @@
     }
 
     function loadPortfolioItemContent(portfolioItemID) {
-        $.ajax({
-            url: $('.ajax-portfolio[data-id="' + portfolioItemID + '"]').attr('href'),
-            type: 'GET',
-            success: function (html) {
-                var getPortfolioItemHtml = $(html).find(".portfolio-item-wrapper").html();
-                $('.portfolio-load-content-holder').append('<div id="pcw-' + portfolioItemID + '" class="portfolio-content-wrapper">' + getPortfolioItemHtml + '</div>');
-                if (!$("#pcw-" + portfolioItemID + " .close-icon").length) {
-                    $("#pcw-" + portfolioItemID).prepend('<div class="close-icon"></div>');
-                }
-                $('html, body').animate({scrollTop: $('#portfolio-wrapper').offset().top - 150}, 400);
-                setTimeout(function () {
-                    $("#pcw-" + portfolioItemID).imagesLoaded(function () {
-                        imageSliderSetUp();
-                        setSlowScroll();
-                        $('#portfolio-grid, .category-filter, .category-filter-list').addClass('hide');
-                        setTimeout(function () {
-                            $("#pcw-" + portfolioItemID).addClass('show');
-                            $('.portfolio-load-content-holder').addClass('show');
-                            $('.grid-item').removeClass('portfolio-content-loading');
-                            $('#portfolio-grid').hide().removeClass('portfoio-items-mask');
-                        }, 300);
-                        $('.close-icon').on('click', function (e) {
-                            var portfolioReturnItemID = $(this).closest('.portfolio-content-wrapper').attr("id").split("-")[1];
-                            $('.portfolio-load-content-holder').addClass("viceversa");
-                            $('#portfolio-grid, .category-filter').css('display', 'block');
-                            setTimeout(function () {
-                                $('#pcw-' + portfolioReturnItemID).removeClass('show');
-                                $('.portfolio-load-content-holder').removeClass('viceversa show');
-                                $('#portfolio-grid, .category-filter, .category-filter-list').removeClass('hide');
-                            }, 300);
-                            setTimeout(function () {
-                                $('html, body').animate({scrollTop: $('#p-item-' + portfolioReturnItemID).offset().top - 150}, 400);
-                            }, 500);
-                        });
-                    });
-                }, 500);
-            }
-        });
-        return false;
+        // $.ajax({
+        //     url: $('.ajax-portfolio[data-id="' + portfolioItemID + '"]').attr('href'),
+        //     type: 'GET',
+        //     success: function (html) {
+        //         var getPortfolioItemHtml = $(html).find(".portfolio-item-wrapper").html();
+        //         $('.portfolio-load-content-holder').append('<div id="pcw-' + portfolioItemID + '" class="portfolio-content-wrapper">' + getPortfolioItemHtml + '</div>');
+        //         if (!$("#pcw-" + portfolioItemID + " .close-icon").length) {
+        //             $("#pcw-" + portfolioItemID).prepend('<div class="close-icon"></div>');
+        //         }
+        //         $('html, body').animate({scrollTop: $('#portfolio-wrapper').offset().top - 150}, 400);
+        //         setTimeout(function () {
+        //             $("#pcw-" + portfolioItemID).imagesLoaded(function () {
+        //                 imageSliderSetUp();
+        //                 setSlowScroll();
+        //                 $('#portfolio-grid, .category-filter, .category-filter-list').addClass('hide');
+        //                 setTimeout(function () {
+        //                     $("#pcw-" + portfolioItemID).addClass('show');
+        //                     $('.portfolio-load-content-holder').addClass('show');
+        //                     $('.grid-item').removeClass('portfolio-content-loading');
+        //                     $('#portfolio-grid').hide().removeClass('portfoio-items-mask');
+        //                 }, 300);
+        //                 $('.close-icon').on('click', function (e) {
+        //                     var portfolioReturnItemID = $(this).closest('.portfolio-content-wrapper').attr("id").split("-")[1];
+        //                     $('.portfolio-load-content-holder').addClass("viceversa");
+        //                     $('#portfolio-grid, .category-filter').css('display', 'block');
+        //                     setTimeout(function () {
+        //                         $('#pcw-' + portfolioReturnItemID).removeClass('show');
+        //                         $('.portfolio-load-content-holder').removeClass('viceversa show');
+        //                         $('#portfolio-grid, .category-filter, .category-filter-list').removeClass('hide');
+        //                     }, 300);
+        //                     setTimeout(function () {
+        //                         $('html, body').animate({scrollTop: $('#p-item-' + portfolioReturnItemID).offset().top - 150}, 400);
+        //                     }, 500);
+        //                 });
+        //             });
+        //         }, 500);
+        //     }
+        // });
+        // return false;
     }
 
     function isValidEmailAddress(emailAddress) {

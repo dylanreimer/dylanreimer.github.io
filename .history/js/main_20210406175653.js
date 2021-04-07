@@ -202,38 +202,45 @@
 
     function imageSliderSetUp() {
         $(".image-slider").each(function () {
-            var speed_value = $(this).data('speed');
-            var auto_value = $(this).data('auto');
-            var hover_pause = $(this).data('hover');
-            if (auto_value === true) {
-                $(this).owlCarousel({
-                    items: 1,
-                    loop: true,
-                    video: true,
-                    lazyLoad: true,
-                    autoHeight: true,
-                    smartSpeed: 1000,
-                    autoplay: auto_value,
-                    autoplayHoverPause: hover_pause,
-                    autoplayTimeout: speed_value,
-                    responsiveClass: true
-                });
-                $(this).on('mouseleave', function () {
-                    $(this).trigger('stop.owl.autoplay');
-                    $(this).trigger('play.owl.autoplay', [auto_value]);
-                });
-            } else {
-                $(this).owlCarousel({
-                    items: 1,
-                    loop: true,
-                    video: true,
-                    lazyLoad: true,
-                    autoHeight: true,
-                    smartSpeed: 1000,
-                    autoplay: false,
-                    responsiveClass: true
-                });
-            }
+            // var speed_value = $(this).data('speed');
+            // var auto_value = $(this).data('auto');
+            // var hover_pause = $(this).data('hover');
+            // if (auto_value === true) {
+            //     $(this).owlCarousel({
+            //         loop: true,
+            //         video: true,
+            //         lazyLoad: true,
+            //         autoHeight: true,
+            //         smartSpeed: 1000,
+            //         autoplay: auto_value,
+            //         autoplayHoverPause: hover_pause,
+            //         autoplayTimeout: speed_value,
+            //         responsiveClass: true,
+            //         items: 1
+            //     });
+            //     $(this).on('mouseleave', function () {
+            //         $(this).trigger('stop.owl.autoplay');
+            //         $(this).trigger('play.owl.autoplay', [auto_value]);
+            //     });
+            // } else {
+            //     $(this).owlCarousel({
+            //         loop: true,
+            //         video: true,
+            //         lazyLoad: true,
+            //         autoHeight: true,
+            //         smartSpeed: 1000,
+            //         autoplay: false,
+            //         responsiveClass: true,
+            //         items: 1
+            //     });
+            // }
+
+            $(this).owlCarousel({
+                items: 1
+                loop: true,
+                video: true,
+                lazyLoad: true,
+            });
         });
     }
 

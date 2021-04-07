@@ -1057,16 +1057,16 @@ div.pp_default .pp_description {
     7.3 Image Slider CSS
 ====================================== */
 
-.owl-stage {
+/* .owl-stage {
     display: flex;
     display: -webkit-flex;
 }
 
 .owl-carousel .owl-item {
     width: 100%;
-}
+} */
 
-.owl-theme .owl-nav.disabled + .owl-dots {
+/* .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 20px;
     line-height: 0;
 }
@@ -1092,7 +1092,7 @@ div.pp_default .pp_description {
 
 .owl-theme .owl-dots .owl-dot.active span {
     background-color: var(--light1);
-}
+} */
 
 .owl-carousel .owl-video-tn {
     background-size: cover;
@@ -1114,14 +1114,35 @@ div.pp_default .pp_description {
     height: 100%;
 }
 
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    display: inline-block;
+}
+
+.owl-dot span {
+    width: 11px;
+    height: 11px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: block;
+    margin: 5px 3px;
+}
+
+.owl-dot.active span {
+    background-color: #000;
+}
+
 .owl-carousel .owl-video-play-icon {
     position: absolute;
-    height: 80px;
-    width: 80px;
-    opacity: 0.8;
+    height: 100%;
+    width: auto;
     background: url(images/play.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    /* cursor: pointer;
+    z-index: 1;
   }
 
 /* ===================================

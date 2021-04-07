@@ -234,6 +234,13 @@
                     responsiveClass: true
                 });
             }
+
+            $(this).owlCarousel({
+                items: 1,
+                loop: true,
+                video: true,
+                lazyLoad: false,
+            });
         });
     }
 

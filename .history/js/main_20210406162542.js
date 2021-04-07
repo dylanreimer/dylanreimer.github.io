@@ -207,16 +207,15 @@
             var hover_pause = $(this).data('hover');
             if (auto_value === true) {
                 $(this).owlCarousel({
-                    items: 1,
                     loop: true,
                     video: true,
-                    lazyLoad: true,
                     autoHeight: true,
                     smartSpeed: 1000,
                     autoplay: auto_value,
                     autoplayHoverPause: hover_pause,
                     autoplayTimeout: speed_value,
-                    responsiveClass: true
+                    responsiveClass: true,
+                    items: 1
                 });
                 $(this).on('mouseleave', function () {
                     $(this).trigger('stop.owl.autoplay');
@@ -224,14 +223,13 @@
                 });
             } else {
                 $(this).owlCarousel({
-                    items: 1,
                     loop: true,
                     video: true,
-                    lazyLoad: true,
                     autoHeight: true,
                     smartSpeed: 1000,
                     autoplay: false,
-                    responsiveClass: true
+                    responsiveClass: true,
+                    items: 1
                 });
             }
         });
