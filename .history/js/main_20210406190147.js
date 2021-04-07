@@ -208,12 +208,10 @@
             if (auto_value === true) {
                 $(this).owlCarousel({
                     items: 1,
-                    stagePadding: -4,
+                    // stagePadding: -2,
                     loop: true,
                     video: true,
                     lazyLoad: true,
-                    // nav: true,
-                    // navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
                     autoHeight: true,
                     smartSpeed: 1000,
                     autoplay: auto_value,
@@ -228,12 +226,10 @@
             } else {
                 $(this).owlCarousel({
                     items: 1,
-                    stagePadding: -4,
+                    // stagePadding: -2,
                     loop: true,
                     video: true,
                     lazyLoad: true,
-                    // nav: true,
-                    // navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
                     autoHeight: true,
                     smartSpeed: 1000,
                     autoplay: false,
