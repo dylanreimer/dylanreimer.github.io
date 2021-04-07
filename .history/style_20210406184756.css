@@ -1096,17 +1096,16 @@ div.pp_default .pp_description {
 
 .owl-carousel .owl-video-tn {
     background-size: cover;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
 }
   
 .owl-video-frame {
     position: relative;
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
 }
-
 .owl-video-frame iframe {
     position: absolute;
     top: 0;
